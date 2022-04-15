@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		59A1749127EF92BA005D158E /* BMICalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1749027EF92BA005D158E /* BMICalculatorApp.swift */; };
-		59A1749327EF92BA005D158E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1749227EF92BA005D158E /* ContentView.swift */; };
+		59A1749327EF92BA005D158E /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1749227EF92BA005D158E /* FirstView.swift */; };
 		59A1749527EF92BC005D158E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1749427EF92BC005D158E /* Assets.xcassets */; };
 		59A1749827EF92BC005D158E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A1749727EF92BC005D158E /* Preview Assets.xcassets */; };
+		59A1749F27EF9534005D158E /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A1749E27EF9534005D158E /* Double+Extension.swift */; };
+		59A174A127EF95AE005D158E /* SliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A174A027EF95AE005D158E /* SliderCell.swift */; };
+		59A174A327EF96DD005D158E /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A174A227EF96DD005D158E /* Int+Extension.swift */; };
+		59A174A527EF9BB0005D158E /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A174A427EF9BB0005D158E /* SecondView.swift */; };
+		59FDDF912805C51400D7B712 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FDDF902805C51400D7B712 /* Constants.swift */; };
+		59FDDF932805C60400D7B712 /* BMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FDDF922805C60400D7B712 /* BMIViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		59A1748D27EF92BA005D158E /* BMICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A1749027EF92BA005D158E /* BMICalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorApp.swift; sourceTree = "<group>"; };
-		59A1749227EF92BA005D158E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59A1749227EF92BA005D158E /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		59A1749427EF92BC005D158E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59A1749727EF92BC005D158E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59A1749E27EF9534005D158E /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		59A174A027EF95AE005D158E /* SliderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCell.swift; sourceTree = "<group>"; };
+		59A174A227EF96DD005D158E /* Int+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		59A174A427EF9BB0005D158E /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		59FDDF902805C51400D7B712 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		59FDDF922805C60400D7B712 /* BMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,10 @@
 		59A1748F27EF92BA005D158E /* BMICalculator */ = {
 			isa = PBXGroup;
 			children = (
+				59FDDF8F2805C4CE00D7B712 /* Helpers */,
+				59FDDF8E2805C4B700D7B712 /* ViewModel */,
 				59A1749027EF92BA005D158E /* BMICalculatorApp.swift */,
-				59A1749227EF92BA005D158E /* ContentView.swift */,
+				59FDDF8C2805C48B00D7B712 /* View */,
 				59A1749427EF92BC005D158E /* Assets.xcassets */,
 				59A1749627EF92BC005D158E /* Preview Content */,
 			);
@@ -65,6 +79,42 @@
 				59A1749727EF92BC005D158E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59FDDF8C2805C48B00D7B712 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				59FDDF8D2805C49E00D7B712 /* CommonView */,
+				59A174A427EF9BB0005D158E /* SecondView.swift */,
+				59A1749227EF92BA005D158E /* FirstView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		59FDDF8D2805C49E00D7B712 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				59A174A027EF95AE005D158E /* SliderCell.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		59FDDF8E2805C4B700D7B712 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				59FDDF922805C60400D7B712 /* BMIViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		59FDDF8F2805C4CE00D7B712 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				59A174A227EF96DD005D158E /* Int+Extension.swift */,
+				59A1749E27EF9534005D158E /* Double+Extension.swift */,
+				59FDDF902805C51400D7B712 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A1749327EF92BA005D158E /* ContentView.swift in Sources */,
+				59A174A527EF9BB0005D158E /* SecondView.swift in Sources */,
+				59FDDF932805C60400D7B712 /* BMIViewModel.swift in Sources */,
+				59A174A327EF96DD005D158E /* Int+Extension.swift in Sources */,
+				59A1749327EF92BA005D158E /* FirstView.swift in Sources */,
 				59A1749127EF92BA005D158E /* BMICalculatorApp.swift in Sources */,
+				59FDDF912805C51400D7B712 /* Constants.swift in Sources */,
+				59A174A127EF95AE005D158E /* SliderCell.swift in Sources */,
+				59A1749F27EF9534005D158E /* Double+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +322,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BMICalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = 7N2H5HVDGB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -282,8 +338,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = appkins.mobi.BMICalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.BMICalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,10 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BMICalculator/Preview Content\"";
-				DEVELOPMENT_TEAM = 7N2H5HVDGB;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -311,8 +368,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = appkins.mobi.BMICalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.BMICalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
