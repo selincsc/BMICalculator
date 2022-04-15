@@ -2,12 +2,12 @@
 
 ## What i Learned BMICalculator with Swift OOP project
 
--MVVM
+-MVVM-
 
--State Management
+-State Management-
 
--Modifiers Using
+-Modifiers Using-
 
--Slider Using
+-Slider Using-
 
--Stack Using
+-Stack Using-
